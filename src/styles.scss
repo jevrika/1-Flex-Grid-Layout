@@ -87,6 +87,7 @@ body {
   font-weight: 400;
   color: var(--blog-topic-surface);
 }
+//
 
 // FOOTER SECTION
 
@@ -97,8 +98,13 @@ body {
 
 //
 
+//MEDIA QUERIES
+
 @media screen  and (min-width: 600px) {
   
+
+  //header and navigation
+
   .header {
     margin: 27px 60px;
   }
@@ -114,6 +120,10 @@ body {
   .menu__toggle{
     opacity: 0;
   }
+
+  //
+
+  //hero section
 
   .hero__content {
     display: grid;
@@ -139,12 +149,12 @@ body {
     width: 100%;
     max-width: 248px;
   }
+  
+  //posts section 
 
   .posts__content {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     grid-template-rows: auto auto;
     gap: 4px 20px;
 
@@ -173,6 +183,9 @@ body {
     flex-direction: row;
   }
 
+  //blogs section
+
+
   .blogs__content {
     display: flex;
     flex-direction: column;
@@ -192,16 +205,21 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
+
   .blog__card-text__wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
+
+  //footer section
+  
   .footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
   }
+
   .footer__content {
     display: flex;
     flex-direction: column;
@@ -223,16 +241,28 @@ body {
   }
 }
 
+//
+
 @media screen and (max-width: 600px) {
 
-  .hero-text__wrapper{
+  //header and navigation
+
+  .header {
+    margin: 20px 10px;
     display: flex;
-    flex-direction: column;
-    gap:20px;
+    justify-content: flex-end;
+    align-items: center;
   }
 
-  .hero-image__wrapper{
-      margin-bottom:55px;
+  .heading--natural {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .text--main,
+  .post__card-date,
+  .post__card-topic {
+    font-size: 16px;
   }
 
   .nav {
@@ -319,23 +349,7 @@ body {
     right: 0;
   }
 
-  .header {
-    margin: 20px 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .heading--natural {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  .text--main,
-  .post__card-date,
-  .post__card-topic {
-    font-size: 16px;
-  }
-
+  //hero section
 
   .hero__content {
     display: flex;
@@ -355,6 +369,15 @@ body {
     width: 170px;
     height: 170px;
   }
+  .hero-text__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .hero-image__wrapper{
+    margin-bottom:55px;
+  }
 
   .hero-button__wrapper {
     display: flex;
@@ -363,6 +386,8 @@ body {
     text-align: center;
     align-items: center;
   }
+
+  //posts section
 
   .posts__content {
     display: flex;
@@ -373,7 +398,6 @@ body {
     background-size: cover;
     background-image: url(./assets/images/hero-section-background.png);
     background-repeat: no-repeat;
-
   }
 
   .post__card {
@@ -386,7 +410,6 @@ body {
 
   .post__card__middle-content {
     white-space: nowrap;
-    
   }
 
   .post__card-heading {
@@ -398,15 +421,7 @@ body {
     justify-content: center;
   }
 
-  .blog__card-image__wrapper{
-    max-width: 400px;
-    max-height: 280px;
-    width: 100%;
-  }
-
-  .blog__card-image{
-    width: 100%;
-  }
+  //blog section
 
   .blogs__content {
     display: flex;
@@ -425,24 +440,37 @@ body {
     gap: 17px;
   }
 
-  .blog__card-heading {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .blog__card__middle-content{
-    display:flex;
-    flex-direction: row;
-  }
-
   .blogs__content {
     padding: 0px 18px 17px 18px;
   }
 
+  .blog__card-image__wrapper{
+    max-width: 400px;
+    max-height: 280px;
+    width: 100%;
+  }
+
+  .blog__card-image{
+    width: 100%;
+  }
+
+  .blog__card-heading {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .blog__card__middle-content{
+    display:flex;
+    flex-direction: row;
+  }
+ 
   .blog__card-text__wrapper{
     display: flex;
     flex-direction: column;
     gap:15px;
   }
+
+  //footer section
 
   .footer__content{
     display: flex;
@@ -450,11 +478,11 @@ body {
     gap:26px;
     margin:50px 0;
   }
+
   .footer__social-links,.footer__copyright{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:35px;
-
   }
 }
