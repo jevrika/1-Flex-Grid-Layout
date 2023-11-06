@@ -38,6 +38,7 @@ body {
 .hero__heading {
   font-size: 44px;
   font-weight: 700;
+  line-height: 60px;
 }
 
 .hero__paragraph {
@@ -100,6 +101,7 @@ body {
 
 //MEDIA QUERIES
 
+
 @media screen  and (min-width: 600px) {
   
 
@@ -130,7 +132,6 @@ body {
     grid-template-columns: 60% 1fr;
     grid-row: auto;
     column-gap: 90px;
-
     padding: 71px 148px;
   }
 
@@ -144,7 +145,6 @@ body {
   .hero-image__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 248px;
@@ -448,6 +448,7 @@ body {
     max-width: 400px;
     max-height: 280px;
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .blog__card-image{
